@@ -1,4 +1,4 @@
-# dashify [![NPM version](https://badge.fury.io/js/dashify.svg)](http://badge.fury.io/js/dashify)
+# dashify [![NPM version](https://badge.fury.io/js/dashify.svg)](http://badge.fury.io/js/dashify)  [![Build Status](https://travis-ci.org/jonschlinkert/dashify.svg)](https://travis-ci.org/jonschlinkert/dashify) 
 
 > Convert a camelcase or space-separated string to a dash-separated string.
 
