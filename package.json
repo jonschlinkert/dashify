@@ -3,21 +3,12 @@
   "description": "Convert a camelcase or space-separated string to a dash-separated string.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/dashify",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/dashify.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/dashify",
   "bugs": {
     "url": "https://github.com/jonschlinkert/dashify/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/dashify/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -29,7 +20,8 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "should": "*"
   },
   "keywords": [
     "dash",
@@ -38,5 +30,16 @@
     "dashify",
     "slug",
     "slugify"
-  ]
+  ],
+  "verb": {
+    "related": {
+      "description": "Some other awesome string libs:",
+      "list": [
+        "pascalcase",
+        "romanize",
+        "wordcount",
+        "word-wrap"
+      ]
+    }
+  }
 }

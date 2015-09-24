@@ -1,13 +1,7 @@
-/*!
- * dashify <https://github.com/jonschlinkert/dashify>
- *
- * Copyright (c) 2015 Jon Schlinkert.
- * Licensed under the MIT license.
- */
-
 'use strict';
 
-var should = require('should');
+require('mocha');
+require('should');
 var dashify = require('./');
 
 describe('dashify', function () {
