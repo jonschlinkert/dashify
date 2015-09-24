@@ -1,7 +1,7 @@
 {
   "name": "dashify",
   "description": "Convert a camelcase or space-separated string to a dash-separated string.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/dashify",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/dashify",
