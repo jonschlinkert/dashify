@@ -11,7 +11,7 @@ module.exports = function dashify(str) {
   if (typeof str !== 'string') {
     throw new TypeError('dashify expects a string.');
   }
-  str = str.replace(/[A-Z]/g, '-$&');
+  str = str.replace(/([a-z])([A-Z])/g, '$1-$2');
   str = str.replace(/[ \t\W]/g, '-');
   str = str.replace(/^\W+/, '');
   return str.toLowerCase();
