@@ -15,6 +15,11 @@ describe('dashify', function () {
     dashify('foo barBaz').should.equal('foo-bar-baz');
     dashify('foo barBaz quux').should.equal('foo-bar-baz-quux');
   });
+  
+  it('should convert space followed by uppercase letter to a single dash:', function() {
+    dashify('foo Bar').should.equal('foo-bar');
+    dashify('Foo BarBaz quux').should.equal('foo-bar-baz-quux');
+  });
 
   it('should convert non-word characters to dashes:', function () {
     dashify('foo*bar').should.equal('foo-bar');
