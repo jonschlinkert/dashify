@@ -48,6 +48,11 @@ describe('dashify', function() {
   it('should work when leading character is uppercase:', function() {
     assert.strictEqual(dashify('Foo barBaz quux'), 'foo-bar-baz-quux');
   });
+  
+  it('should keep Latin Unicode characters in the transformed string:', function() {
+    assert.strictEqual(dashify('São Tomé and Príncipe'), 'são-tomé-and-príncipe');
+    assert.strictEqual(dashify('æçÐo Test Ø'), 'æç-ðo-test-ø');
+  });
 
   it('should throw an error if a string is not passed:', function(cb) {
     try {

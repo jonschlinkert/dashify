@@ -17,9 +17,10 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "eslint index.js & mocha"
   },
   "devDependencies": {
+    "eslint": "^2.11.1",
     "gulp-format-md": "^0.1.9",
     "mocha": "^2.5.1"
   },
