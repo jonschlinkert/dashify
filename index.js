@@ -7,15 +7,15 @@
 
 'use strict';
 
-module.exports = dashify
+module.exports = dashify;
 
 function dashify(string) {
   if (typeof string !== 'string') {
     throw new TypeError('expected a string');
   }
 
-  var sentence = []
-  var needsDash = false
+  var sentence = [];
+  var needsDash = false;
 
   for(var i=0; i<string.length; i++) {
     var char = string[i];
@@ -23,7 +23,7 @@ function dashify(string) {
     var isNumber = !Number.isNaN(parseFloat(char));
 
     if (isNumber) {
-      lower = char
+      lower = char;
     } else {
       var upper = char.toUpperCase();
       var lower = char.toLowerCase();
@@ -48,9 +48,6 @@ function dashify(string) {
     }
 
     if (isAlphaNumeric) {
-      if (lower == "*") {
-        throw new Error("daf")
-      }
       sentence.push(lower);
     } else if (sentence.length && !isAlphaNumeric) {
       needsDash = true;
