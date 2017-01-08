@@ -58,4 +58,9 @@ describe('dashify', function() {
       cb();
     }
   });
+
+  it('should work with russian characters:', function() {
+    assert.strictEqual(dashify(', Перев1од*1f'), 'перев1од-1f');
+  })
+
 });
