@@ -27,6 +27,8 @@ dashify('foo barBaz');
 //=> 'foo-bar-baz'
 dashify('foo barBaz quux');
 //=> 'foo-bar-baz-quux'
+dashify('foo - bar');
+//=> 'foo-bar'
 ```
 
 ## Related projects

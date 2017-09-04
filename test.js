@@ -49,6 +49,14 @@ describe('dashify', function() {
     assert.strictEqual(dashify('Foo barBaz quux'), 'foo-bar-baz-quux');
   });
 
+  it('should simplify multiple dashes:', function () {
+    assert.strictEqual(dashify('Foo  bar'), 'foo-bar');
+    assert.strictEqual(dashify('Foo  Bar'), 'foo-bar');
+    assert.strictEqual(dashify('Foo  - bar'), 'foo-bar');
+    assert.strictEqual(dashify('Foo--bar'), 'foo-bar');
+    assert.strictEqual(dashify(' -  foo  -'), 'foo');
+  });
+
   it('should throw an error if a string is not passed:', function(cb) {
     try {
       dashify();
