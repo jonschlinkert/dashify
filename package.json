@@ -1,6 +1,6 @@
 {
   "name": "dashify",
-  "description": "Convert a camelcase or space-separated string to a dash-separated string.",
+  "description": "Convert a camelcase or space-separated string to a dash-separated string. ~12 sloc, fast, supports diacritics.",
   "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/dashify",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
@@ -37,17 +37,25 @@
     "slugify"
   ],
   "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
     "related": {
+      "description": "Other awesome string libs you might like:",
       "list": [
         "pascalcase",
         "romanize",
         "word-wrap",
         "wordcount"
-      ],
-      "description": "Some other awesome string libs:"
+      ]
     },
-    "plugins": [
-      "gulp-format-md"
-    ]
+    "lint": {
+      "reflinks": true
+    }
   }
 }
