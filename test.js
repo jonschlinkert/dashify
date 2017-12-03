@@ -14,6 +14,11 @@ describe('dashify', function() {
     assert.strictEqual(dashify('São Tomé and Príncipe'), 'são-tomé-and-príncipe');
   });
 
+  it('should condense multiple subsequent dashes to one', function() {
+    assert.strictEqual(dashify('Foo----Bar'), 'foo----bar');
+    assert.strictEqual(dashify('Foo----Bar', {condense: true}), 'foo-bar');
+  });
+
   it('should strip dashes from oes and sos', function() {
     assert.strictEqual(dashify('-foo'), 'foo');
     assert.strictEqual(dashify('foo-'), 'foo');

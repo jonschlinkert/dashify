@@ -7,7 +7,7 @@
 
 'use strict';
 
-module.exports = function dashify(str) {
+module.exports = function dashify(str, options) {
   if (typeof str !== 'string') {
     throw new TypeError('expected a string');
   }
@@ -16,5 +16,6 @@ module.exports = function dashify(str) {
     .replace(/([a-z])([A-Z])/g, '$1-$2')
     .replace(/\W/g, m => /[À-ž]/.test(m) ? m : '-')
     .replace(/^-+|-+$/g, '')
+    .replace(/-{2,}/g, m => options && options.condense ? '-' : m)
     .toLowerCase();
 };
