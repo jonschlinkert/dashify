@@ -10,6 +10,10 @@ describe('dashify', function() {
     assert.strictEqual(dashify('fooBarBaz'), 'foo-bar-baz');
   });
 
+  it('should support diacritics', function() {
+    assert.strictEqual(dashify('São Tomé and Príncipe'), 'são-tomé-and-príncipe');
+  });
+
   it('should strip dashes from oes and sos', function() {
     assert.strictEqual(dashify('-foo'), 'foo');
     assert.strictEqual(dashify('foo-'), 'foo');
@@ -47,15 +51,13 @@ describe('dashify', function() {
 
   it('should work when leading character is uppercase:', function() {
     assert.strictEqual(dashify('Foo barBaz quux'), 'foo-bar-baz-quux');
+    assert.strictEqual(dashify('FooBarBaz'), 'foo-bar-baz');
+    assert.strictEqual(dashify('Foo Bar'), 'foo-bar');
   });
 
-  it('should throw an error if a string is not passed:', function(cb) {
-    try {
+  it('should throw an error if a string is not passed:', function() {
+    assert.throws(function() {
       dashify();
-      cb(new Error('expected an error'));
-    } catch (err) {
-      assert.equal(err.message, 'expected a string');
-      cb();
-    }
+    }, /expected/);
   });
 });
