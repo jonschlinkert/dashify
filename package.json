@@ -4,6 +4,11 @@
   "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/dashify",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "Jeffrey Priebe (https://github.com/jeffreypriebe)",
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Ondrej Brinkel (https://www.anzui.de)"
+  ],
   "repository": "jonschlinkert/dashify",
   "bugs": {
     "url": "https://github.com/jonschlinkert/dashify/issues"
