@@ -1,20 +1,10 @@
 {
-  "name": "dashify",
-  "description": "Convert a camelcase or space-separated string to a dash-separated string.",
-  "version": "0.2.2",
-  "homepage": "https://github.com/jonschlinkert/dashify",
-  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
-  "repository": "jonschlinkert/dashify",
-  "bugs": {
-    "url": "https://github.com/jonschlinkert/dashify/issues"
-  },
-  "license": "MIT",
-  "files": [
-    "index.js"
-  ],
-  "main": "index.js",
-  "engines": {
-    "node": ">=0.10.0"
+  "name": "add-dashes",
+  "version": "0.0.0",
+  "description": "Convert arbitrary text to kebab-case",
+  "main": "add-dashes.js",
+  "dependencies": {
+    "module-library": "*"
   },
   "scripts": {
     "test": "mocha"
@@ -23,26 +13,8 @@
     "gulp-format-md": "^0.1.9",
     "mocha": "^2.5.1"
   },
-  "keywords": [
-    "dash",
-    "dashcase",
-    "dasherize",
-    "dashify",
-    "slug",
-    "slugify"
-  ],
-  "verb": {
-    "related": {
-      "list": [
-        "pascalcase",
-        "romanize",
-        "word-wrap",
-        "wordcount"
-      ],
-      "description": "Some other awesome string libs:"
-    },
-    "plugins": [
-      "gulp-format-md"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikpukinskis/add-dashes.git"
   }
 }
