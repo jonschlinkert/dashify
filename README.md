@@ -31,7 +31,7 @@ Install dev dependencies:
 $ npm install -d && npm test
 ```
 
-## Contributers
+## Past contributers
 
 **Jon Schlinkert**
 
