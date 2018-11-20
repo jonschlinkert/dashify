@@ -7,11 +7,8 @@
 
 'use strict';
 
-module.exports = function dashify(str, options) {
-  if (typeof str !== 'string') {
-    throw new TypeError('expected a string');
-  }
-
+module.exports = (str, options) => {
+  if (typeof str !== 'string') throw new TypeError('expected a string');
   return str.trim()
     .replace(/([a-z])([A-Z])/g, '$1-$2')
     .replace(/\W/g, m => /[À-ž]/.test(m) ? m : '-')
