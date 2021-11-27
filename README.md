@@ -56,6 +56,37 @@ console.log(dashify('Foo----Bar', {condense: true}));
 //=> 'foo-bar'
 ```
 
+## options.groupCaps
+
+**Type:** `boolean`
+
+**Default**: `undefined`
+
+Treat multiple consecutive capitals as one word.
+
+```js
+console.log(dashify('CamelCASERules', {groupCaps: true}));
+//=> 'camel-case-rules'
+
+console.log(dashify('IndexID', {groupCaps: true}));
+//=> 'index-id'
+
+console.log(dashify('CamelCASE', {groupCaps: true}));
+//=> 'camel-case'
+
+console.log(dashify('aID', {groupCaps: true}));
+//=> 'a-id'
+
+console.log(dashify('theIDForUSGovAndDOD', {groupCaps: true}));
+//=> 'the-id-for-us-gov-and-dod'
+
+console.log(dashify('TheID-', {groupCaps: true}));
+//=> 'the-id'
+
+console.log(dashify('-IDOne', {groupCaps: true}));
+//=> 'id-one'
+```
+
 ## About
 
 <details>
